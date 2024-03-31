@@ -1,0 +1,12 @@
+.footer{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: blue;
+
+}
+
+.ft{
+    
+    border: 2px solid red;
+}
