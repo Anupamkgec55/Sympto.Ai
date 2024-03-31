@@ -7,7 +7,7 @@ def Home(request):
     return render(request,'index.html')
 
 def Welcome(request):
-    return render(request,'index123.html')
+    return render(request,'heart.html')
 
 def About(request):
     return render(request,'about.html')

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/static/slider.css">
     <link rel="stylesheet" href="/static/cards.css">
     <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="/static/dept.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <li><a href="{% url 'dept' %}">Departments</a></li>
             <li><a href="{% url 'dept' %}">Analysis</a></li>
             <li><a href="{% url 'dept' %}">Contacts</a></li>
-                <!-- <a href="{% url 'analysis' %}">hi</a> -->
+        
             </ul>
         </div>
     </div>
@@ -44,19 +45,55 @@
     </div>
 
 
-
-
-    <div class="footer">
+    <div class="dept_cards">
+        <div class="dept">
+            <div class="dept_img"><img src="/static/src/Button_img/icons8-medical-heart-40.png" alt=""></div>
+            
+            <div class="inner_dept">
+            <p>Heart</p>
+            <button><a href="{% url 'heart' %}">Predict</a></button>
+        </div>
+        </div>
         
-        <div class="ft">
+        <div class="dept">
+            <div class="dept_img"><img src="/static/src/Button_img/icons8-medical-heart-40.png" alt=""></div>
+            
+            <div class="inner_dept">
+            <p>Liver</p>
+            <button><a href="{% url 'Liver' %}">Predict</a></button>
+        </div>
+        </div>
+
+        <div class="dept">
+            <div class="dept_img"><img src="/static/src/Button_img/icons8-medical-heart-40.png" alt=""></div>
+            
+            <div class="inner_dept">
+            <p>Diabetes</p>
+            <button><a href="{% url 'diabetes' %}">Predict</a></button>
+        </div>
+        </div>
+
+        <div class="dept">
+            <div class="dept_img"><img src="/static/src/Button_img/icons8-medical-heart-40.png" alt=""></div>
+            
+            <div class="inner_dept">
+            <p>Heart</p>
+            <button>Predict</button>
+        </div>
+        </div>
+
+
+    <div class="dept_footer">
+        
+        <div class="dept_ft">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet totam, non excepturi nam tenetur expedita veniam reiciendis esse nisi vel voluptate itaque debitis laborum repellat dignissimos dicta assumenda sit aperiam facilis laudantium odio illum quibusdam inventore. Ipsam laudantium minus iste repellat totam natus, quisquam quaerat debitis quia praesentium nulla repellendus qui consectetur dicta! Repellat doloremque quae reprehenderit earum fugit dicta fuga officiis provident. Doloremque, sed iste animi, excepturi earum laudantium perspiciatis similique dolorum saepe deserunt eius officiis tenetur odio neque velit nisi facilis, magni labore consequatur sint iure harum laborum. Doloremque cumque minima illum aliquam magni, nemo totam! Ut!</p>
         </div>
 
-        <div class="ft">
+        <div class="dept_ft">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum eius mollitia veniam voluptas quasi velit nisi necessitatibus numquam possimus dolore, accusantium obcaecati corrupti excepturi. Molestiae sapiente voluptate consequuntur architecto esse rerum amet harum quibusdam quisquam dolore. Quas laborum, excepturi iste quam optio ab provident ipsa itaque voluptate at. Magni, labore.</p>
         </div>
 
-        <div class="ft">Lorem ipsum dolor sit amet consectetur adipisicing elit. In id quam minima exercitationem dolor architecto nihil laudantium quidem molestias assumenda! Fuga cumque veritatis labore eaque non officia officiis, enim, odit exercitationem deserunt, sint temporibus ipsum! Odio explicabo vitae aliquid? Saepe voluptatum aspernatur quisquam unde ad beatae facere odit neque, consectetur, cumque repellat in? Nisi, fuga, distinctio dignissimos, iste cupiditate accusamus iusto magnam provident consequuntur explicabo commodi dolor hic itaque laborum earum laboriosam. Aspernatur temporibus esse molestiae, facere minus illo dolorum corporis rerum quasi, perferendis animi tempora aperiam dicta numquam impedit. Expedita inventore neque esse ex! Aliquid, veritatis est sapiente blanditiis sequi quae, aliquam odio esse temporibus assumenda nulla beatae aut nemo qui quo at dolorum saepe iste asperiores reiciendis neque.
+        <div class="dept_ft">Lorem ipsum dolor sit amet consectetur adipisicing elit. In id quam minima exercitationem dolor architecto nihil laudantium quidem molestias assumenda! Fuga cumque veritatis labore eaque non officia officiis, enim, odit exercitationem deserunt, sint temporibus ipsum! Odio explicabo vitae aliquid? Saepe voluptatum aspernatur quisquam unde ad beatae facere odit neque, consectetur, cumque repellat in? Nisi, fuga, distinctio dignissimos, iste cupiditate accusamus iusto magnam provident consequuntur explicabo commodi dolor hic itaque laborum earum laboriosam. Aspernatur temporibus esse molestiae, facere minus illo dolorum corporis rerum quasi, perferendis animi tempora aperiam dicta numquam impedit. Expedita inventore neque esse ex! Aliquid, veritatis est sapiente blanditiis sequi quae, aliquam odio esse temporibus assumenda nulla beatae aut nemo qui quo at dolorum saepe iste asperiores reiciendis neque.
         </div>
             
         </div>
