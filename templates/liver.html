@@ -21,13 +21,12 @@
         <!--Header-->
     <div class="first_part">
         <div class="header">
-            <h2 id="logo">Sympto.AI</h2>
+            <a href="{% url 'home' %}"><h2 id="logo">Sympto.AI</h2></a>
             <div class="nav">
                 <ul>
                   <li>Home</li>
                   <li><a href="{% url 'about' %}">About</a></li>
                   <li><a href="{% url 'dept' %}">Departments</a></li>
-                  <li><a href="{% url 'dept' %}">Analysis</a></li>
                   <li><a href="{% url 'dept' %}">Contacts</a></li>
               
                   
@@ -40,72 +39,118 @@
             <div class="info_text">
                 <h2>----------------------------------</h2>
                 <h1>Liver Disease</h1>
-                <h3>-----------------------------------</h3>
+                <h3>----------------------------------</h3>
             </div>
         </div>
 
-    <div class="login">
-      <h1>Liver disease Prediction</h1>
-      <br />
+  
+    
 
-      <form action="user" >
-        <input type="text" name="Age" placeholder="Age" required="required" />
-        <input type="text" name="Gender" placeholder="Gender" required="required" />
-        <input
-          type="text"
-          name="TB"
-          placeholder="TB"
-          required="required"
-        />
-        <input
-          type="text"
-          name="DB"
-          placeholder="DB"
-          required="required"
-        />
-
-        <input
-          type="text"
-          name="Alkphos"
-          placeholder="Alkphos"
-          required="required"
-        />
-        <input
-          type="text"
-          name="Alamine_Aminotransferase"
-          placeholder="Alamine_Aminotransferase"
-          required="required"
-        />
-        <input
-          type="text"
-          name="Aspartate_Aminotransferase"
-          placeholder="Aspartate_Aminotransferase"
-          required="required"
-        />
-        <input
-          type="text"
-          name="Total_Protiens"
-          placeholder="Total_Protiens"
-          required="required"
-        />
-        <input
-          type="text"
-          name="ALB"
-          placeholder="ALB"
-          required="required"
-        />
-        <input
-          type="text"
-          name="A/G Ratio"
-          placeholder="A/G Ratio"
-          required="required"
-        />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">
-          Predict
-        </button>
-      </form>
-     
-    </div>
+        <div class="container">
+          <Liver class="form-title">Liver disease Prediction</h1>
+            <form action="user" >
+        
+          <div class="main-user-info">
+    
+            <div class="user-input-box">
+              
+                        <label for="age">Age</label>    
+                        <input 
+                          type="text"
+                          id="age" 
+                          name="Age" 
+                          placeholder="Age" 
+                          required="required" 
+                        />
+             </div>           
+            <div class="user-input-box">
+                        <label for="gen">Gender</label> 
+                        <input 
+                          type="text"
+                          id="gen"
+                          name="Gender" 
+                          placeholder="Gender" 
+                          required="required" 
+                          />
+                        </div>  
+            <div class="user-input-box">
+                        <label for="TB">TB</label>               
+                        <input
+                          type="text"
+                          id="TB"
+                          name="TB"
+                          placeholder="TB"
+                          required="required"
+                        /> 
+                      </div>  
+            <div class="user-input-box">
+                        <label for="DB">DB</label> 
+                        <input
+                          type="text"
+                          id="DB"
+                          name="DB"
+                          placeholder="DB"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="Alkphos">Alkphos</label> 
+                        <input
+                          type="text"
+                          id="Alkphos"
+                          name="Alkphos"
+                          placeholder="Alkphos"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="Alamine_Aminotransferase">Alamine_Aminotransferase</label> 
+                        <input
+                          type="text"
+                          id="Alamine_Aminotransferase"
+                          name="Alamine_Aminotransferase"
+                          placeholder="Alamine_Aminotransferase"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="Aspartate_Aminotransferase">Aspartate_Aminotransferase</label> 
+                        <input
+                          type="text"
+                          id="Aspartate_Aminotransferase"
+                          name="Aspartate_Aminotransferase"
+                          placeholder="Aspartate_Aminotransferase"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="Total_Protiens">Total_Protiens</label> 
+                        <input
+                          type="text"
+                          id="Total_Protiens"
+                          name="Total_Protiens"
+                          placeholder="Total_Protiens"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="ALB">ALB</label> 
+                        <input
+                          type="text"
+                          id="ALB"
+                          name="ALB"
+                          placeholder="ALB"
+                          required="required"
+                        /></div>  
+            <div class="user-input-box">
+                        <label for="A/G Ratio">A/G Ratio</label> 
+                        <input
+                          type="text"
+                          id="A/G Ratio"
+                          name="A/G Ratio"
+                          placeholder="A/G Ratio"
+                          required="required"
+                        /></div>  
+            <div class="form-submit-btn">
+                        <input type="submit" value="Predict">
+                      </div> 
+           
+          </form>
+        </div>
   </body>
 </html>

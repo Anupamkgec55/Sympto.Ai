@@ -17,3 +17,11 @@
     transform: rotateY(180deg);
 }
 
+a{
+    text-decoration: none;
+    
+}
+
+link[rel="icon"] {
+    border-radius: 50%;
+}

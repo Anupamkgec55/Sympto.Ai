@@ -28,7 +28,6 @@
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'dept' %}">Departments</a></li>
-            <li><a href="{% url 'dept' %}">Analysis</a></li>
             <li><a href="{% url 'dept' %}">Contacts</a></li>
         
             </ul>
@@ -56,11 +55,12 @@
         </div>
         
         <div class="dept">
-            <div class="dept_img"><img src="/static/src/Button_img/icons8-medical-heart-40.png" alt=""></div>
+            <div class="dept_img"><img 
+              style="height: 80px;"src="/static/src/Button_img/icons8-liver-40.png" alt=""></div>
             
             <div class="inner_dept">
             <p>Liver</p>
-            <button><a href="{% url 'Liver' %}">Predict</a></button>
+            <button id="predictButton">Predict Your Liver Condition</button>
         </div>
         </div>
 
@@ -83,22 +83,51 @@
         </div>
 
 
-    <div class="dept_footer">
+       
+</div>
+
+<div class="footer">
         
-        <div class="dept_ft">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet totam, non excepturi nam tenetur expedita veniam reiciendis esse nisi vel voluptate itaque debitis laborum repellat dignissimos dicta assumenda sit aperiam facilis laudantium odio illum quibusdam inventore. Ipsam laudantium minus iste repellat totam natus, quisquam quaerat debitis quia praesentium nulla repellendus qui consectetur dicta! Repellat doloremque quae reprehenderit earum fugit dicta fuga officiis provident. Doloremque, sed iste animi, excepturi earum laudantium perspiciatis similique dolorum saepe deserunt eius officiis tenetur odio neque velit nisi facilis, magni labore consequatur sint iure harum laborum. Doloremque cumque minima illum aliquam magni, nemo totam! Ut!</p>
-        </div>
+    <div class="ft">
+      <div class="first">
+        <p id="one">Health-Diagonosis</p>
+        <p id="two">Healing is a Matter of Time,but it is sometimes also matter of opportunity</p>
+      </div>
+      <div class="second">
+        <img src="../static/src/Footer/icons8-google-logo-100.png" alt="">
+        <img src="../static/src/Footer/icons8-twitter-logo-50.png" alt="">
+        <img src="../static/src/Footer/icons8-instagram-reels-50.png" alt="">
+      </div>
+    </div>
 
-        <div class="dept_ft">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum eius mollitia veniam voluptas quasi velit nisi necessitatibus numquam possimus dolore, accusantium obcaecati corrupti excepturi. Molestiae sapiente voluptate consequuntur architecto esse rerum amet harum quibusdam quisquam dolore. Quas laborum, excepturi iste quam optio ab provident ipsa itaque voluptate at. Magni, labore.</p>
-        </div>
-
-        <div class="dept_ft">Lorem ipsum dolor sit amet consectetur adipisicing elit. In id quam minima exercitationem dolor architecto nihil laudantium quidem molestias assumenda! Fuga cumque veritatis labore eaque non officia officiis, enim, odit exercitationem deserunt, sint temporibus ipsum! Odio explicabo vitae aliquid? Saepe voluptatum aspernatur quisquam unde ad beatae facere odit neque, consectetur, cumque repellat in? Nisi, fuga, distinctio dignissimos, iste cupiditate accusamus iusto magnam provident consequuntur explicabo commodi dolor hic itaque laborum earum laboriosam. Aspernatur temporibus esse molestiae, facere minus illo dolorum corporis rerum quasi, perferendis animi tempora aperiam dicta numquam impedit. Expedita inventore neque esse ex! Aliquid, veritatis est sapiente blanditiis sequi quae, aliquam odio esse temporibus assumenda nulla beatae aut nemo qui quo at dolorum saepe iste asperiores reiciendis neque.
-        </div>
-            
+    <div class="ft">
+        
+          <div class="nav_ft">
+            <ul>
+              <h1 class="ft_h1">Site Links</h1>
+              <li><a href="{% url 'about' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'dept' %}">Departments</a></li>
+              <li><a href="{% url 'dept' %}">Analysis</a></li>
+              <li><a href="{% url 'dept' %}">Contacts</a></li>
+          
+              
+            </ul>
         </div>
     </div>
 
-</div>
+    <div class="ft">
+      <div class="infor">
+      <h1 id="q">Have a Question?</h1>
+        <div class="call">+91 8597823037</div>
+        <div class="mail">SymptoAI.com</div>
+      </div>
+    </div>
+     
+  </div>
+  <div class="copyright">   
+    <p >Copyright ©2024 All rights reseved | SymptoAI</p>
+    </div>
+
 </body>
 </html>

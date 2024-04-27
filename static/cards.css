@@ -1,57 +1,38 @@
-.card {
-    width: 200px;
-    height: 200px;
+.slider {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    position: relative;
     perspective: 1000px;
-    margin: 20px;
-    float: left;
   }
-  .cardsss{
-    margin-top: 800px;
-    margin-bottom: 100px;
-}
-  .card-inner {
+  
+  .card {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    position: absolute;
     transform-style: preserve-3d;
-    cursor: pointer;
+    transition: transform 0.5s;
   }
-
-  .card:hover .card-inner {
+  
+  .slider:hover .card {
     transform: rotateY(180deg);
   }
-
-  .card-front, .card-back {
+  
+  .front,
+  .back {
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
   }
-
-  .card-front {
-    background-color: #333;
+  
+  .front {
+    background-color: #3498db;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
   }
-
-  .card-back {
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
+  
+  .back {
+    background-color: #2ecc71;
+    color: white;
     transform: rotateY(180deg);
   }
-
-
- .allcards{
-  height: 300px;
- }
-
-#Classification{
-    color: red;
-    margin:80px 20px 0px 590px;
-  }
+  

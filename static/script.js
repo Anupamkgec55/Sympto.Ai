@@ -10,3 +10,9 @@ selPara.classList.remove('hidden');
 curr_para = num;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var predictButton = document.getElementById("predictButton");
+    predictButton.addEventListener("click", function() {
+      window.location.href = "/Departments/liver/";
+    });
+  });

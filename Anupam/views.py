@@ -8,12 +8,21 @@ def Home(request):
 
 def Welcome(request):
     return render(request,'heart.html')
+def Liver(request):
+    return render(request,'liver.html')
+def Welcome(request):
+    return render(request,'diabetes.html')
+def Welcome(request):
+    return render(request,'cancer.html')
 
 def About(request):
     return render(request,'about.html')
 
 def Dept(request):
     return render(request,'departments.html')
+
+def Cont(request):
+    return render(request,'contacts.html')
 
 def User(request):
     Age = float(request.GET['Age'])
@@ -31,3 +40,25 @@ def User(request):
     # knn_acc_score = accuracy_score(y_test, knn_predicted)
 
     return render(request,'user.html',{'name':y_pred})
+
+
+
+from Anupam.forms import ContactForm;
+from django.core.mail import send_mail;
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+            
+            send_mail(
+                f'Name: {name}\nEmail: {email}\n\nMessage:\n{message}',
+                ['Anupamdasasansol@gmail.com'], 
+            )
+    else:
+        form = ContactForm()
+
+    return render(request, 'contacts.html', {'form': form})

@@ -19,7 +19,7 @@
     flex-direction: column;
     margin-left: 20px;
     position: relative;
-    background-color: #b9e2f5;
+    background-color:#0624ce;
     margin-top: 50px;
     width: 300px;
     height: 400px;
@@ -28,7 +28,7 @@
 }
 
 #buttn{
-    background-color: #b9e2f5;
+    background-color:#0624ce;
     color:white;
     border: none;
     cursor:pointer;
